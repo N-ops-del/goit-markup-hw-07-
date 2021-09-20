@@ -23,7 +23,6 @@
     max-width: 1600px;
     align-items: baseline;
     display: flex;
-    padding-left: 205px;
     padding-right: 15px;
     margin: 0 auto;
 }
@@ -39,6 +38,7 @@
 .footer-wrapper{
     display: flex;
     flex-direction: column;
+    min-width: 290px;
 }
 .footer-list{
     margin-right: 70px;
@@ -62,18 +62,15 @@
     height: 44px;
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.1);
-
     transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.footer-social-link:hover,
-.footer-social-link:focus{
-    background-color: #2196F3;
+    &:hover,&:focus{
+        background-color: #2196F3;
+    }
 }
 .footer-social-icon{
     fill: #ffffff;
-
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
