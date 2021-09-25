@@ -15,6 +15,12 @@
     transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        &:hover,&:focus{
+            background-color: #2196F3;
+    }
+        &:hover>.social-icon,&:focus>.social-icon{
+            fill: #ffffff;
+        }
 }
 .social-icon{
     fill: #AFB1B8;
@@ -24,12 +30,4 @@
 }
 .social-card-item:not(:last-child){
     margin-right: 10px;
-}
-.social-link:hover,
-.social-link:focus{
-    background-color: #2196F3;
-}
-.social-link:hover>.social-icon,
-.social-link:focus>.social-icon{
-    fill: #ffffff;
 }

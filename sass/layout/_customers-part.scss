@@ -14,6 +14,12 @@
     transition-property: border-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,&:focus{
+        border-color: #2196F3;
+    }
+    &:hover>.customers-logo,&:focus>.customers-logo{
+        fill: #2196F3;
+    }
 }
 .customers-logo{
     fill: #AFB1B8;    
@@ -21,12 +27,4 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     
-}
-.customers-link:hover,
-.customers-link:focus{
-    border-color: #2196F3;
-}
-.customers-link:hover>.customers-logo,
-.customers-link:focus>.customers-logo{
-    fill: #2196F3;
 }

@@ -1,4 +1,4 @@
-.portfolio-card{
+.portfolio-list__card{
     align-items: left;
     margin-right: 30px;
     margin-bottom: 30px;
@@ -12,7 +12,7 @@
     height: 294px;
     overflow: hidden; 
 }
-.portfolio-link:hover .card-overlay{
+.portfolio-list__link:hover .card-overlay{
     transform: translateY(0);
 }
 .card-overlay{
@@ -35,7 +35,7 @@
     letter-spacing: 0.03em;
     color: #FFFFFF;    
 }
-.portfolio-link{
+.portfolio-list__link{
     display: block;
     &:hover,&:focus{
         box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);    
@@ -44,10 +44,10 @@
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
 }
-.portfolio-card:nth-child(3n){
+.portfolio-list__card:nth-child(3n){
     margin-right: 0;
 }
-.portfolio-card:nth-child(n+6){
+.portfolio-list__card:nth-child(n+6){
     margin-bottom: 0;
 }
 .card-text{
@@ -56,19 +56,19 @@
     position: relative;
     z-index: 1;
 }
-.project-title{
+.card-text__title{
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
     color: var(--secondary-title-color);
 }
-.project-text{
+.card-text__name{
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.03em;
     color: var(--main-text-color);
 }
-.button-item:not(:last-child){
+.button-list__item:not(:last-child){
     margin-right: 8px;
 }
