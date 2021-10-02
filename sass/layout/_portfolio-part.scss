@@ -1,3 +1,8 @@
+.portfolio-list{
+    flex-wrap: wrap;
+    display: flex;
+    position: relative;
+}
 .portfolio-list__card{
     align-items: left;
     margin-right: 30px;

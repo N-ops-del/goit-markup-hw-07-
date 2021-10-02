@@ -50,12 +50,6 @@ ul {
   justify-content: center;
 }
 
-.portfolio-list {
-  flex-wrap: wrap;
-  display: flex;
-  position: relative;
-}
-
 .header .container {
   display: flex;
   align-items: center;
@@ -68,15 +62,32 @@ ul {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
 }
 
 .main-title {
@@ -215,7 +226,7 @@ ul {
 
 .hero {
   text-align: center;
-  padding: 200px 0;
+  padding: 118px 60px;
   max-width: 1600px;
   margin: 0 auto;
   background-color: #2F303A;
@@ -223,6 +234,18 @@ ul {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    padding: 118px 204px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding: 200px 0;
+  }
 }
 
 .hero-section {
@@ -234,13 +257,31 @@ ul {
 }
 
 .main-button {
-  width: 200px;
+  width: 170px;
   height: 50px;
   border: transparent;
   background: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   cursor: pointer;
+}
+
+@media screen and (min-width: 480px) {
+  .main-button {
+    width: 200px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .main-button {
+    width: 200px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .main-button {
+    width: 200px;
+  }
 }
 
 .button-text {
@@ -254,11 +295,11 @@ ul {
 
 .hero-title {
   margin-bottom: 30px;
-  max-width: 700px;
+  max-width: 360px;
   text-transform: uppercase;
   text-align: center;
   font-weight: 900;
-  font-size: 44px;
+  font-size: 20px;
   line-height: 1.36;
   letter-spacing: 0.06em;
   color: #FFFFFF;
@@ -266,12 +307,55 @@ ul {
   margin-right: auto;
 }
 
+@media screen and (min-width: 480px) {
+  .hero-title {
+    font-size: 26px;
+    letter-spacing: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-title {
+    max-width: 700px;
+    font-size: 44px;
+    letter-spacing: 0.06em;
+  }
+}
+
 .advantage-list {
   display: flex;
 }
 
-.advantage-item:not(:last-child) {
-  margin-right: 50px;
+@media screen and (min-width: 320px) {
+  .advantage-list {
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .advantage-list {
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .advantage-list {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .advantage-item {
+    align-items: left;
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+  .advantage-item:ntn-child(even) {
+    margin-right: 0;
+  }
+  .advantage-item:ntn-clild(n+3) {
+    margin-bottom: o;
+  }
 }
 
 .advantage-main-title {
@@ -286,17 +370,41 @@ ul {
   color: var(--secondary-title-color);
 }
 
+@media screen and (min-width: 480px) {
+  .advantage-title {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .advantage-title {
+    text-align: start;
+  }
+}
+
 .advantage-text {
   margin-top: 10px;
-  max-width: 270px;
+  max-width: 290px;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
 }
 
+@media screen and (min-width: 480px) {
+  .advantage-text {
+    max-width: 450px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .advantage-text {
+    max-width: 354px;
+  }
+}
+
 .work-logo-item {
-  width: 270px;
+  width: 290px;
   height: 120px;
   background: #F5F4FA;
   border-radius: 4px;
@@ -304,10 +412,24 @@ ul {
   display: flex;
   justify-content: center;
   margin-bottom: 30px;
+  margin-right: none;
+}
+
+@media screen and (min-width: 480px) {
+  .work-logo-item {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .work-logo-item {
+    width: 354px;
+  }
 }
 
 .work-section {
   padding-top: 0;
+  display: none;
 }
 
 .work-list {
@@ -422,6 +544,12 @@ ul {
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-list {
+  flex-wrap: wrap;
+  display: flex;
+  position: relative;
 }
 
 .portfolio-list__card {
